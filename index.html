@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffd8e6" />
+  <meta name="description" content="A little apology made with love." />
+  <title>Hii Brooo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true">
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <div class="petal petal-1"></div>
+    <div class="petal petal-2"></div>
+    <div class="petal petal-3"></div>
+    <div class="petal petal-4"></div>
+  </div>
+
+  <audio id="bgMusic" src="assets/music.mp3" preload="auto" loop></audio>
+
+  <main class="app" id="app">
+    <section class="slide active" data-slide="0" id="slide-1" aria-label="Opening">
+      <div class="noise" aria-hidden="true"></div>
+      <div class="corner-gif corner-top-right floating-slow">
+        <img src="assets/Bunny 1.gif" alt="Cute bunny decoration" />
+      </div>
+      <div class="corner-gif corner-bottom-left floating">
+        <img src="assets/Bunny 2.gif" alt="Cute bunny decoration" />
+      </div>
+
+      <div class="hero-card glass-card">
+        <p class="eyebrow fade-up">Hii Honey</p>
+        <h1 class="hero-title">I just wanna<br><em>say sorry</em></h1>
+        <p class="hero-subtitle">just a tiny little place for my heart to say what I couldn't say properly ♡</p>
+
+        <button class="envelope-btn" id="openBtn" type="button" aria-label="Open the apology">
+          <span class="envelope-icon" aria-hidden="true">
+            <img src="assets/Bunny 3.gif" alt="" />
+          </span>
+          <span class="btn-label">open it</span>
+          <span class="btn-shine" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">tap gently · read slowly</div>
+    </section>
+
+    <section class="slide" data-slide="1" id="slide-2" aria-label="Letter">
+      <div class="letter-layout">
+        <div class="letter-heading">
+          <span class="tiny-label">a letter from me to you</span>
+          <h2>Please read this.</h2>
+        </div>
+
+        <div class="letter-stage">
+          <div class="letter-deco letter-deco-left floating-slow">
+            <img src="assets/Bunny 4.gif" alt="Cute bunny decoration" />
+          </div>
+          <div class="letter-deco letter-deco-right floating">
+            <img src="assets/Bunny 5.gif" alt="Cute bunny decoration" />
+          </div>
+
+          <article class="paper" id="paper">
+            <div class="paper-lines" aria-hidden="true"></div>
+            <div class="paper-content">
+              <p class="typed-line" data-text="Hey, Honey... how are uuu?"></p>
+              <p class="typed-line" data-text="I hope you’re doing well"></p>
+              <p class="typed-line" data-text="I just wanted to..."></p>
+              <p class="typed-line" data-text="Can we put an end to this argument?"></p>
+              <p class="typed-line" data-text="Because I don’t want us to run away from the problems we’re facing instead of resolving them together"></p>
+
+              <p class="typed-line" data-text="I fully realize that the way i spoke to uuu yesterday was wrong."></p>
+              <p class="typed-line" data-text="U need to know this because i want our relationship to gradually improve"></p>
+              <p class="typed-line" data-text="Especially for the sake of our future family"></p>
+
+              <p class="typed-line" data-text="I never intended to hurt you at all."></p>
+              <p class="typed-line" data-text="And if I did, I am truly sorry"></p>
+
+              <p class="typed-line accent-line" data-text="Safi Tsal5na, honey?"></p>
+
+              <p class="typed-line" data-text="You are such a cheerful girl, even though you do get angry and sulk easily."></p>
+              <p class="typed-line" data-text="Being with you has made me realize that we’ll never find a truly perfect partner."></p>
+              <p class="typed-line" data-text="I want to sincerely embrace all your traits"></p>
+              <p class="typed-line" data-text="I accept you just as you are. I’m ready to face whatever comes our way because I love you so deeply and sincerely."></p>
+              <p class="typed-line" data-text="I hope you feel the same."></p>
+              <p class="typed-line" data-text="That’s not to say you aren’t perfect in my eyes"></p>
+              <p class="typed-line" data-text="I am truly grateful to have you in my life. It brings me so much happiness to be by your side through the ups and downs."></p>
+              <p class="typed-line" data-text="I want to stay with you for the rest of my life until we grow old together and share the same home."></p>
+
+              <p class="typed-line" data-text="I won’t force you to keep talking to me right now"></p>
+              <p class="typed-line" data-text="Please take some time. Give yourself space to think things through instead of just sulking."></p>
+              <p class="typed-line" data-text="I’m doing all of this because I love you."></p>
+              <p class="signature typed-line" data-text="— me, still choosing you ♡"></p>
+            </div>
+          </article>
+        </div>
+
+        <div class="letter-actions">
+          <div class="progress-note" id="typingNote">the words are taking their time... ♡</div>
+          <button class="soft-btn hidden" id="nextBtn" type="button">next please <span>→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="2" id="slide-3" aria-label="Forgiveness">
+      <div class="question-wrap">
+        <div class="mini-kicker">one tiny question...</div>
+        <h2>Do you wanna<br><span>forgive me?</span></h2>
+        <p class="question-note">be honest, honey. but please be gentle with my heart ♡</p>
+
+        <div class="answer-area" id="answerArea">
+          <button class="answer-btn yes-btn" id="yesBtn" type="button">Yes <span>♡</span></button>
+          <button class="answer-btn no-btn" id="noBtn" type="button">No <span>:(</span></button>
+        </div>
+
+        <div class="bunny-cluster" aria-hidden="true">
+          <div class="bunny bunny-a floating-slow"><img src="assets/Bunny 6.gif" alt="" /></div>
+          <div class="bunny bunny-b floating"><img src="assets/Bunny 7.gif" alt="" /></div>
+          <div class="bunny bunny-c floating-slower"><img src="assets/Bunny 8.gif" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="3" aria-label="Final message">
+      <div class="final-wrap">
+        <div class="final-glow" aria-hidden="true"></div>
+        <div class="final-gif floating-slow">
+          <img src="assets/Bunny 9.gif" alt="Cute bunny" />
+        </div>
+        <p class="final-overline">one last thing...</p>
+        <h2 class="final-message">Text me / Call me /<br>Vidcall me<br><em>if u aren't mad anymore</em><span>babyyy hhhhoouuuhiii.</span></h2>
+        <div class="final-heart" aria-hidden="true">♡</div>
+        <button class="replay-btn" id="replayBtn" type="button">read it again ↺</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="music-hint" id="musicHint" role="status" aria-live="polite">
+    <span class="music-dot"></span>
+    music on ♫
+  </div>
+
+  <div class="slide-dots" aria-label="Slide navigation">
+    <button class="dot active" data-go="0" type="button" aria-label="Go to slide 1"></button>
+    <button class="dot" data-go="1" type="button" aria-label="Go to slide 2"></button>
+    <button class="dot" data-go="2" type="button" aria-label="Go to slide 3"></button>
+    <button class="dot" data-go="3" type="button" aria-label="Go to slide 4"></button>
+  </div>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const slides = [...document.querySelectorAll('.slide')];
+      const dots = [...document.querySelectorAll('.dot')];
+      const bgMusic = document.getElementById('bgMusic');
+      const openBtn = document.getElementById('openBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const yesBtn = document.getElementById('yesBtn');
+      const noBtn = document.getElementById('noBtn');
+      const answerArea = document.getElementById('answerArea');
+      const replayBtn = document.getElementById('replayBtn');
+      const musicHint = document.getElementById('musicHint');
+      const paper = document.getElementById('paper');
+      const typingNote = document.getElementById('typingNote');
+      const typedLines = [...document.querySelectorAll('.typed-line')];
+
+      let currentSlide = 0;
+      let typingTimer = null;
+      let typingStarted = false;
+      let noAttempts = 0;
+
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function setSlide(index) {
+        if (index < 0 || index >= slides.length || index === currentSlide) return;
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+        currentSlide = index;
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+
+        if (currentSlide === 1 && !typingStarted) startTyping();
+        if (currentSlide === 1) {
+          setTimeout(() => paper?.focus(), 350);
+        }
+      }
+
+      function goNext() {
+        setSlide(Math.min(currentSlide + 1, slides.length - 1));
+      }
+
+      function startMusic() {
+        if (!bgMusic) return;
+        bgMusic.volume = 0.32;
+        const promise = bgMusic.play();
+        if (promise && typeof promise.catch === 'function') {
+          promise.catch(() => {
+            musicHint.classList.add('is-blocked');
+            musicHint.innerHTML = '<span class="music-dot"></span> tap anywhere for music ♫';
+          });
+        }
+      }
+
+      function unlockMusic() {
+        startMusic();
+        window.removeEventListener('pointerdown', unlockMusic);
+        window.removeEventListener('keydown', unlockMusic);
+        setTimeout(() => musicHint.classList.add('show'), 180);
+        setTimeout(() => musicHint.classList.remove('show'), 2600);
+      }
+
+      async function typeLine(line, text, speed = 22) {
+        line.textContent = '';
+        line.classList.add('typing');
+        for (const character of text) {
+          line.textContent += character;
+          await new Promise(resolve => setTimeout(resolve, prefersReducedMotion ? 0 : speed));
+          if (paper) paper.scrollTop = paper.scrollHeight;
+        }
+        line.classList.remove('typing');
+      }
+
+      async function startTyping() {
+        typingStarted = true;
+        typingNote.textContent = 'the words are taking their time... ♡';
+        typedLines.forEach(line => line.textContent = '');
+        for (let i = 0; i < typedLines.length; i++) {
+          const line = typedLines[i];
+          const text = line.dataset.text || '';
+          const speed = line.classList.contains('accent-line') ? 30 : 18;
+          await typeLine(line, text, speed);
+          await new Promise(resolve => setTimeout(resolve, prefersReducedMotion ? 0 : 120));
+        }
+        typingNote.textContent = 'thank you for reading all the way down ♡';
+        nextBtn.classList.remove('hidden');
+      }
+
+      function moveNoButton() {
+        noAttempts += 1;
+        const areaRect = answerArea.getBoundingClientRect();
+        const btnRect = noBtn.getBoundingClientRect();
+        const pad = Math.min(24, Math.max(12, areaRect.width * 0.04));
+
+        const maxX = Math.max(pad, areaRect.width - btnRect.width - pad);
+        const maxY = Math.max(pad, areaRect.height - btnRect.height - pad);
+        const x = Math.random() * maxX - (areaRect.width - btnRect.width) / 2 + areaRect.width / 2;
+        const y = Math.random() * maxY - (areaRect.height - btnRect.height) / 2 + areaRect.height / 2;
+
+        noBtn.style.setProperty('--no-x', `${x - noBtn.offsetLeft - btnRect.width / 2}px`);
+        noBtn.style.setProperty('--no-y', `${y - noBtn.offsetTop - btnRect.height / 2}px`);
+        noBtn.classList.add('dodging');
+
+        const messages = [
+          'hehe... try again ♡',
+          'nope, too slow :p',
+          'i know you wanna say yes...',
+          'honeyyyy please ♡',
+          'the button is shy now 😭',
+          'okay okay... one more try'
+        ];
+        noBtn.dataset.label = messages[Math.min(noAttempts - 1, messages.length - 1)];
+        noBtn.setAttribute('aria-label', noBtn.dataset.label);
+      }
+
+      function resetNoButton() {
+        noAttempts = 0;
+        noBtn.classList.remove('dodging');
+        noBtn.style.removeProperty('--no-x');
+        noBtn.style.removeProperty('--no-y');
+        noBtn.removeAttribute('data-label');
+        noBtn.setAttribute('aria-label', 'No');
+      }
+
+      openBtn.addEventListener('click', () => {
+        startMusic();
+        setSlide(1);
+      });
+
+      nextBtn.addEventListener('click', () => setSlide(2));
+      yesBtn.addEventListener('click', () => {
+        startMusic();
+        resetNoButton();
+        setSlide(3);
+      });
+
+      ['mouseenter', 'focus', 'touchstart'].forEach(eventName => {
+        noBtn.addEventListener(eventName, moveNoButton, { passive: true });
+      });
+      noBtn.addEventListener('click', event => {
+        event.preventDefault();
+        moveNoButton();
+      });
+
+      replayBtn.addEventListener('click', () => {
+        resetNoButton();
+        typedLines.forEach(line => line.textContent = '');
+        nextBtn.classList.add('hidden');
+        typingStarted = false;
+        if (paper) paper.scrollTop = 0;
+        setSlide(0);
+      });
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => setSlide(Number(dot.dataset.go)));
+      });
+
+      window.addEventListener('wheel', event => {
+        if (Math.abs(event.deltaY) < 30) return;
+        setSlide(event.deltaY > 0 ? currentSlide + 1 : currentSlide - 1);
+      }, { passive: true });
+
+      let touchStartY = 0;
+      window.addEventListener('touchstart', event => {
+        touchStartY = event.touches[0].clientY;
+      }, { passive: true });
+      window.addEventListener('touchend', event => {
+        const dy = touchStartY - event.changedTouches[0].clientY;
+        if (Math.abs(dy) < 60) return;
+        if (currentSlide === 1 && event.target.closest('.paper')) return;
+        setSlide(dy > 0 ? currentSlide + 1 : currentSlide - 1);
+      }, { passive: true });
+
+      window.addEventListener('keydown', event => {
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown' || event.key === 'PageDown') setSlide(currentSlide + 1);
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowUp' || event.key === 'PageUp') setSlide(currentSlide - 1);
+      });
+
+      window.addEventListener('pointerdown', unlockMusic, { once: true });
+      window.addEventListener('keydown', unlockMusic, { once: true });
+
+      // Best-effort autoplay: browsers may block sound until the first interaction.
+      startMusic();
+    })();
+  </script>
+</body>
+</html>
